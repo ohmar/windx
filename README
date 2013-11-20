@@ -1,0 +1,41 @@
+README for windx.py by Omar Sandoval
+
+---
+
+DEPENDENCIES:
+
+Python 2.7
+Python 2 Xlib (python2-xlib)
+urxvt (or xterm as explained in the topmost docstring of windx.py)
+
+OPTIONAL DEPENDENCIES:
+Xephyr (for testing purposes)
+
+---
+
+Using Xephyr
+
+Xephyr is a neat program that usually comes bundled with an X installation.
+It is not required but it makes testing a window manager a lot easier.
+
+Start it with Xephyr :N -screen widthxheight (N being the display you want to start it at.)
+	  Ex. Xephyr :1 -screen 1024x768
+
+To start windx, open a new terminal and pass the display number to it when running it
+	  Ex. DISPLAY:=1 python2 /location/of/file/windx.py
+
+---
+
+Playing with windx
+
+As stated in windx.py; Shift-Enter opens an instance of URxvt.
+Move the window around by right clicking and dragging.
+
+
+---
+
+Included .png's
+
+windxAlone.png is windx.py running as a standalone window manager.
+windxNested.png is windx.py running in a nested X display through Xephyr.
+
