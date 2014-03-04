@@ -22,7 +22,7 @@ Start it with Xephyr :N -screen widthxheight (N being the display you want to st
 	  Ex. Xephyr :1 -screen 1024x768
 
 To start windx, open a new terminal and pass the display number to it when running it
-	  Ex. DISPLAY:=1 python2 /location/of/file/windx.py
+	  Ex. DISPLAY=:1 python2 /location/of/file/windx.py
 
 ---
 
